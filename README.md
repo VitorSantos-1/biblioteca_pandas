@@ -1,4 +1,4 @@
-# biblioteca_pandas
+# Case_varejo
 
 
 O objetivo deste projeto é criar métricas para acompanhar os resultados de uma loja de varejo, utilizando as bases de dados de vendas e de clientes. As métricas a serem criadas incluem:
