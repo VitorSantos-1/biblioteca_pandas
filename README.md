@@ -1,60 +1,75 @@
-# Case_varejo
+<h1 align="center">🐼 Case Varejo — Análise de Dados com pandas</h1>
 
+<p align="center">
+  <em>Métricas de negócio para uma loja de varejo, a partir das bases de vendas e clientes.</em>
+</p>
 
-O objetivo deste projeto é criar métricas para acompanhar os resultados de uma loja de varejo, utilizando as bases de dados de vendas e de clientes. As métricas a serem criadas incluem:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/seaborn-4C72B0?style=flat-square" alt="seaborn"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" alt="Plotly"/>
+</p>
+
+---
+
+## 🎯 Objetivo
+
+Criar métricas para acompanhar os resultados de uma loja de varejo, utilizando as bases de dados de **vendas** e de **clientes**.
+
+## 📈 Métricas geradas
 
 1. Departamentos mais vendidos
-2. Média de preço com frete por Nome de Departamento
-3. Quantidade de vendas por Mês
+2. Média de preço com frete por nome de departamento
+3. Quantidade de vendas por mês
 4. Média de renda para cada tipo de canal de venda
 5. Média de idade de clientes por bandeira
 
-Premissas de Negócio
-1. Para compras sem UF, considere o Estado do MS.
-2. Preço não pode ser maior que preço com frete.
+## 📋 Premissas de negócio
 
-As etapas foram:
-1. Carregamento dos Dados
-- Importação das bases de dados de vendas e de clientes.
+- Para compras sem UF, considera-se o estado de **MS**.
+- O preço **não** pode ser maior que o preço com frete.
 
-2. Tratamento dos Dados
-- Correção de dados ausentes:
-- Para as compras sem UF, foi atribuído o Estado do MS.
-- Validação de preços:
-- Verificação e correção para garantir que o preço não seja maior que o preço com frete.
+## 🔧 Etapas do projeto
 
-3. União das Bases de Dados
-- Integração das bases de vendas e clientes com base em chaves comuns, como ID(cliente_Log)
- de cliente e ID(cliente_log) de venda.
+| # | Etapa | O que é feito |
+|---|-------|---------------|
+| 1 | **Carregamento** | Importação das bases de vendas e clientes. |
+| 2 | **Tratamento** | Correção de dados ausentes (UF → MS) e validação de preços. |
+| 3 | **União (Join)** | Integração das bases por chaves em comum (ID de cliente/venda). |
+| 4 | **Métricas** | Agrupamentos e cálculos para gerar os 5 indicadores. |
+| 5 | **Visualização** | Gráficos com Matplotlib e Plotly. |
 
-4. Criação das Métricas
+## 🛠️ Ferramentas
 
-4.1 Departamentos mais vendidos
-- Agrupamento dos dados de vendas por departamento.
-- Cálculo da quantidade total de vendas para cada departamento.
-- Identificação dos departamentos com maior número de vendas.
+- **Linguagem:** Python
+- **Bibliotecas:** pandas, seaborn, Matplotlib, Plotly
 
-4.2 Média de preço com frete por Nome de Departamento
-- Agrupamento dos dados de vendas por departamento.
-- Cálculo da média de preço com frete para cada departamento.
+## 🚀 Como executar
 
-4.3 Quantidade de vendas por Mês
-- Extração do mês de cada data de venda.
-- Agrupamento dos dados de vendas por mês.
-- Cálculo da quantidade total de vendas para cada mês.
+```bash
+# Instalar dependências
+pip install pandas seaborn matplotlib plotly cufflinks
 
-4.4 Média de renda para cada tipo de canal de venda
-- Agrupamento dos dados de vendas por tipo de canal de venda.
-- Cálculo da média de renda para cada tipo de canal de venda.
+# Abrir o notebook
+jupyter notebook Case_varejo.ipynb
+```
 
-4.5 Média de idade de clientes por bandeira
-- Agrupamento dos dados de clientes por bandeira.
-- Cálculo da média de idade dos clientes para cada bandeira.
+## 📂 Arquivos
 
-5. Ferramentas Utilizadas
-- Linguagem de Programação: Python
-- Bibliotecas: Pandas, Seaborn/Matplotlib/Plotly (para visualização de dados)
+| Arquivo | Descrição |
+|---------|-----------|
+| [`Case_varejo.ipynb`](Case_varejo.ipynb) | Notebook com toda a análise, do tratamento às visualizações. |
+| [`Requerimento_case_varejo.md`](Requerimento_case_varejo.md) | Enunciado / requisitos do case. |
 
-Conclusão:
+## ✅ Conclusão
 
-As métricas foram geradas com sucesso, fornecendo insights valiosos sobre os departamentos mais vendidos, preços médios com frete, vendas mensais, renda média por canal de venda e idade média dos clientes por bandeira. Essas informações são essenciais para a tomada de decisões estratégicas pela loja de varejo.
+As métricas foram geradas com sucesso, fornecendo *insights* sobre os departamentos mais vendidos, preços médios com frete, vendas mensais, renda média por canal e idade média dos clientes por bandeira — informações essenciais para a tomada de decisões estratégicas da loja.
+
+---
+
+<p align="center">
+  <sub>Feito por <a href="https://github.com/VitorSantos-1">Vitor Santos</a> · 🐼 Análise de Dados</sub>
+</p>
