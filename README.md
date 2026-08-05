@@ -1,4 +1,4 @@
-<h1 align="center">🐼 Case Varejo — Análise de Dados com pandas</h1>
+<h1 align="center">Case Varejo — Análise de Dados com pandas</h1>
 
 <p align="center">
   <em>Métricas de negócio para uma loja de varejo, a partir das bases de vendas e clientes.</em>
