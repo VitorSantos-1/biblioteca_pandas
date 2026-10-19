@@ -66,5 +66,5 @@ Requerimento_case_varejo.md   -> Enunciado e requisitos do case
 
 ## Autor
 
-José Vitor Santos Pinheiro — Análise de Dados e Inteligência Comercial (Varejo e Supply Chain).
+José Vitor Santos Pinheiro — Análise de Dados e Inteligência Comercial (Varejo, Indústria e Distribuição).
 Contato: vytorsantt@gmail.com
